@@ -1,11 +1,136 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/src/style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
-  </body>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center px-8 py-6">
+    <h1 class="text-lg font-bold">adamkeyes</h1>
+    <nav class="flex space-x-4 text-gray-300">
+      <a href="#" class="hover:text-green">GitHub</a>
+      <a href="#" class="hover:text-green">LinkedIn</a>
+      <a href="#" class="hover:text-green">Twitter</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="grid md:grid-cols-2 gap-8 items-center px-8 py-16">
+    <div>
+      <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+        Nice to meet you! <br> I'm Adam Keyes.
+      </h2>
+      <p class="text-gray-400 mt-4">
+        Based in the UK, I'm a front-end developer passionate about
+        building accessible web apps that users love.
+      </p>
+      <a href="#contact" class="inline-block mt-6 px-6 py-3 border-2 border-green text-green font-bold rounded hover:bg-green hover:text-gray-900 transition">
+        Contact Me
+      </a>
+    </div>
+    <div>
+      <img src="portrait.png" alt="Portrait" class="rounded-lg w-full">
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="px-8 py-16 border-t border-gray-800">
+    <h3 class="text-3xl font-bold mb-10">Skills</h3>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
+      <div><strong>HTML</strong><p class="text-gray-400">4 Years Experience</p></div>
+      <div><strong>CSS</strong><p class="text-gray-400">4 Years Experience</p></div>
+      <div><strong>JavaScript</strong><p class="text-gray-400">4 Years Experience</p></div>
+      <div><strong>Accessibility</strong><p class="text-gray-400">4 Years Experience</p></div>
+      <div><strong>TailwindCSS</strong><p class="text-gray-400">3 Years Experience</p></div>
+      <div><strong>Sass</strong><p class="text-gray-400">3 Years Experience</p></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="px-8 py-16 border-t border-gray-800">
+    <div class="flex justify-between items-center mb-10">
+      <h3 class="text-3xl font-bold">Projects</h3>
+      <a href="#contact" class="text-green hover:text-green-300 font-bold">Contact Me</a>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Project card -->
+      <div class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition">
+        <img src="design-portfolio.png" alt="Design Portfolio" class="w-full">
+        <div class="p-4">
+          <h4 class="text-xl font-bold">Design Portfolio</h4>
+          <span class="text-gray-400 text-sm">HTML | CSS</span>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition">
+        <img src="e-learning.png" alt="E-Learning" class="w-full">
+        <div class="p-4">
+          <h4 class="text-xl font-bold">E-Learning Landing Page</h4>
+          <span class="text-gray-400 text-sm">HTML | CSS</span>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition">
+        <img src="todo.png" alt="Todo Web App" class="w-full">
+        <div class="p-4">
+          <h4 class="text-xl font-bold">Todo Web App</h4>
+          <span class="text-gray-400 text-sm">HTML | CSS | JS</span>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition">
+        <img src="entertainment.png" alt="Entertainment Web App" class="w-full">
+        <div class="p-4">
+          <h4 class="text-xl font-bold">Entertainment Web App</h4>
+          <span class="text-gray-400 text-sm">HTML | CSS | JS</span>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition">
+        <img src="memory.png" alt="Memory Game" class="w-full">
+        <div class="p-4">
+          <h4 class="text-xl font-bold">Memory Game</h4>
+          <span class="text-gray-400 text-sm">HTML | CSS | JS</span>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition">
+        <img src="art-gallery.png" alt="Art Gallery Showcase" class="w-full">
+        <div class="p-4">
+          <h4 class="text-xl font-bold">Art Gallery Showcase</h4>
+          <span class="text-gray-400 text-sm">HTML | CSS | JS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="px-8 py-16 border-t border-gray-800">
+    <h3 class="text-3xl font-bold mb-6">Contact</h3>
+    <div class="grid md:grid-cols-2 gap-10">
+      <p class="text-gray-400">
+        I would love to hear about your project and how I could help.
+        Please fill in the form, and I'll get back to you as soon as possible.
+      </p>
+      <form class="flex flex-col">
+        <input type="text" placeholder="Name" class="mb-4 p-3 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-green">
+        <input type="email" placeholder="Email" class="mb-4 p-3 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-green">
+        <textarea placeholder="Message" rows="5" class="mb-4 p-3 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-green"></textarea>
+        <button type="submit" class="px-6 py-3 border-2 border-green text-green font-bold rounded hover:bg-green hover:text-gray-900 transition">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="px-8 py-6 border-t border-gray-800 text-center text-gray-400">
+    <p>adamkeyes © 2025</p>
+  </footer>
+
+</body>
 </html>
