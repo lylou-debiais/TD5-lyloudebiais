@@ -11,16 +11,17 @@
   <!-- Header -->
   <header class="flex justify-between items-center px-8 py-6">
     <h1 class="text-lg font-bold">adamkeyes</h1>
-    <nav class="flex space-x-4 text-gray-300">
-      <a href="#" class="hover:text-green">GitHub</a>
-      <a href="#" class="hover:text-green">LinkedIn</a>
-      <a href="#" class="hover:text-green">Twitter</a>
+    <nav class="flex space-x-4">
+      <img src="assets/Icons/icon-github.svg" alt="GitHub">
+      <img src="assets/Icons/icon-linkedin.svg" alt="LinkedIn" >
+      <img src="assets/Icons/icon-frontend-mentor.svg" alt="Twitter" >
+      <img src="assets/Icons/icon-twitter.svg" alt="Twitter" >
     </nav>
   </header>
 
   <!-- Hero -->
   <section class="grid md:grid-cols-2 gap-8 items-center px-8 py-16">
-    <div>
+    <article>
       <h2 class="text-4xl md:text-5xl font-bold leading-tight">
         Nice to meet you! <br> I'm Adam Keyes.
       </h2>
@@ -28,109 +29,117 @@
         Based in the UK, I'm a front-end developer passionate about
         building accessible web apps that users love.
       </p>
-      <a href="#contact" class="inline-block mt-6 px-6 py-3 border-2 border-green text-green font-bold rounded hover:bg-green hover:text-gray-900 transition">
+      <a href="#contact" class="">
         Contact Me
       </a>
-    </div>
-    <div>
-      <img src="portrait.png" alt="Portrait" class="rounded-lg w-full">
-    </div>
+    </article>
+    <figure>
+      <img src="assets/Profile/image-profile-mobile.webp" alt="Portrait" class="">
+    </figure>
   </section>
 
   <!-- Skills -->
-  <section class="px-8 py-16 border-t border-gray-800">
-    <h3 class="text-3xl font-bold mb-10">Skills</h3>
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
-      <div><strong>HTML</strong><p class="text-gray-400">4 Years Experience</p></div>
-      <div><strong>CSS</strong><p class="text-gray-400">4 Years Experience</p></div>
-      <div><strong>JavaScript</strong><p class="text-gray-400">4 Years Experience</p></div>
-      <div><strong>Accessibility</strong><p class="text-gray-400">4 Years Experience</p></div>
-      <div><strong>TailwindCSS</strong><p class="text-gray-400">3 Years Experience</p></div>
-      <div><strong>Sass</strong><p class="text-gray-400">3 Years Experience</p></div>
-    </div>
+  <section class="">
+    <h3 class="">Skills</h3>
+    <ul class=" text-center">
+      <li><strong>HTML</strong><p class="">4 Years Experience</p></li>
+      <li><strong>CSS</strong><p class="">4 Years Experience</p></li>
+      <li><strong>JavaScript</strong><p class="">4 Years Experience</p></li>
+      <li><strong>Accessibility</strong><p class="">4 Years Experience</p></li>
+      <li><strong>TailwindCSS</strong><p class="">3 Years Experience</p></li>
+      <li><strong>Sass</strong><p class="">3 Years Experience</p></li>
+    </ul>
   </section>
 
   <!-- Projects -->
-  <section class="px-8 py-16 border-t border-gray-800">
-    <div class="flex justify-between items-center mb-10">
-      <h3 class="text-3xl font-bold">Projects</h3>
-      <a href="#contact" class="text-green hover:text-green-300 font-bold">Contact Me</a>
-    </div>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Project card -->
-      <div class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition">
-        <img src="design-portfolio.png" alt="Design Portfolio" class="w-full">
-        <div class="p-4">
-          <h4 class="text-xl font-bold">Design Portfolio</h4>
-          <span class="text-gray-400 text-sm">HTML | CSS</span>
-        </div>
-      </div>
+  <section class="">
+    <header class="">
+      <h3 class="">Projects</h3>
+      <a href="#contact" class="">Contact Me</a>
+    </header>
+    <ul class="">
+      
+      <li class="">
+        <figure>
+          <img src="/assets/Projects/thumbnail-project-1-small.webp" alt="Design Portfolio" class="w-full">
+          <figcaption class="p-4">
+            <h4 class="">Design Portfolio</h4>
+            <span class="">HTML  CSS</span>
+          </figcaption>
+        </figure>
+      </li>
 
-      <div class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition">
-        <img src="e-learning.png" alt="E-Learning" class="w-full">
-        <div class="p-4">
-          <h4 class="text-xl font-bold">E-Learning Landing Page</h4>
-          <span class="text-gray-400 text-sm">HTML | CSS</span>
-        </div>
-      </div>
+      <li class="">
+        <figure>
+          <img src="/assets/Projects/thumbnail-project-2-small.webp" alt="E-Learning" class="w-full">
+          <figcaption class="p-4">
+            <h4 class="">E-Learning Landing Page</h4>
+            <span class="">HTML  CSS</span>
+          </figcaption>
+        </figure>
+      </li>
 
-      <div class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition">
-        <img src="todo.png" alt="Todo Web App" class="w-full">
-        <div class="p-4">
-          <h4 class="text-xl font-bold">Todo Web App</h4>
-          <span class="text-gray-400 text-sm">HTML | CSS | JS</span>
-        </div>
-      </div>
+      <li class="">
+        <figure>
+          <img src="assets/Projects/thumbnail-project-3-small.webp" alt="Todo Web App" class="w-full">
+          <figcaption class="p-4">
+            <h4 class="text-xl font-bold">Todo Web App</h4>
+            <span class="">HTML  CSS  JS</span>
+          </figcaption>
+        </figure>
+      </li>
 
-      <div class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition">
-        <img src="entertainment.png" alt="Entertainment Web App" class="w-full">
-        <div class="p-4">
-          <h4 class="text-xl font-bold">Entertainment Web App</h4>
-          <span class="text-gray-400 text-sm">HTML | CSS | JS</span>
-        </div>
-      </div>
+      <li class="">
+        <figure>
+          <img src="assets/Projects/thumbnail-project-4-small.webp" alt="Entertainment Web App" class="w-full">
+          <figcaption class="p-4">
+            <h4 class="text-xl font-bold">Entertainment Web App</h4>
+            <span class="">HTML  CSS  JS</span>
+          </figcaption>
+        </figure>
+      </li>
 
-      <div class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition">
-        <img src="memory.png" alt="Memory Game" class="w-full">
-        <div class="p-4">
-          <h4 class="text-xl font-bold">Memory Game</h4>
-          <span class="text-gray-400 text-sm">HTML | CSS | JS</span>
-        </div>
-      </div>
+      <li class="">
+        <figure>
+          <img src="assets/Projects/thumbnail-project-5-small.webp" alt="Memory Game" class="w-full">
+          <figcaption class="p-4">
+            <h4 class="text-xl font-bold">Memory Game</h4>
+            <span class="">HTML  CSS  JS</span>
+          </figcaption>
+        </figure>
+      </li>
 
-      <div class="bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition">
-        <img src="art-gallery.png" alt="Art Gallery Showcase" class="w-full">
-        <div class="p-4">
-          <h4 class="text-xl font-bold">Art Gallery Showcase</h4>
-          <span class="text-gray-400 text-sm">HTML | CSS | JS</span>
-        </div>
-      </div>
-    </div>
+      <li class="">
+        <figure>
+          <img src="assets/Projects/thumbnail-project-6-small.webp" alt="Art Gallery Showcase" class="w-full">
+          <figcaption class="p-4">
+            <h4 class="text-xl font-bold">Art Gallery Showcase</h4>
+            <span class="">HTML  CSS  JS</span>
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="px-8 py-16 border-t border-gray-800">
-    <h3 class="text-3xl font-bold mb-6">Contact</h3>
-    <div class="grid md:grid-cols-2 gap-10">
-      <p class="text-gray-400">
+  <section id="contact" class="">
+    <h3 class="">Contact</h3>
+    <section class="">
+      <p class="">
         I would love to hear about your project and how I could help.
         Please fill in the form, and I'll get back to you as soon as possible.
       </p>
       <form class="flex flex-col">
-        <input type="text" placeholder="Name" class="mb-4 p-3 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-green">
-        <input type="email" placeholder="Email" class="mb-4 p-3 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-green">
-        <textarea placeholder="Message" rows="5" class="mb-4 p-3 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-green"></textarea>
-        <button type="submit" class="px-6 py-3 border-2 border-green text-green font-bold rounded hover:bg-green hover:text-gray-900 transition">
+        <input type="text" placeholder="Name" class="">
+        <input type="email" placeholder="Email" class="">
+        <textarea placeholder="Message" rows="5" class=""></textarea>
+        <button type="submit" class="">
           Send Message
         </button>
       </form>
-    </div>
+    </section>
   </section>
 
-  <!-- Footer -->
-  <footer class="px-8 py-6 border-t border-gray-800 text-center text-gray-400">
-    <p>adamkeyes © 2025</p>
-  </footer>
 
 </body>
 </html>
